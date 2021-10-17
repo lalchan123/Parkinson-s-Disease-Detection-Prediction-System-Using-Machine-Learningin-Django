@@ -1,0 +1,27 @@
+from django.db import models
+
+# Create your models here.
+class ParkinsonPredict(models.Model):
+    MDVP_Fo = models.FloatField()
+    MDVP_Fhi = models.FloatField()
+    MDVP_Flo = models.FloatField()
+    MDVP_Jitter = models.FloatField()
+    MDVP_Jitter_Abs = models.FloatField()
+    MDVP_RAP = models.FloatField()
+    MDVP_PPQ = models.FloatField()
+    Jitter_DDP = models.FloatField()
+    MDVP_Shimmer = models.FloatField()
+    MDVP_Shimmer_dB = models.FloatField()
+    Shimmer_APQ3 = models.FloatField()
+    Shimmer_APQ5 = models.FloatField()
+    MDVP_APQ = models.FloatField()
+    Shimmer_DDA = models.FloatField()
+    NHR = models.FloatField()
+    HNR = models.FloatField()
+    RPDE = models.FloatField()
+    DFA = models.FloatField()
+    spread1 = models.FloatField()
+    spread2 = models.FloatField()
+    D2 = models.FloatField()
+    PPE = models.FloatField()
+    status = models.CharField(max_length=200)
